@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Train Scheduler</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link href="/Users/Anam/Desktop/AnamAM.github.io/train-scheduler/assets/css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+
+<body id="wholething">
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Anytime is Train Time</h1>
+            <h4 class="text-center">Choo Choo. Chee Chee.</h5>
+        </div>
+        <div class="card card-default">
+            <div class="card-header" id="header-font">Current Train Scheduler</div>
+            <div class="card-body" id="body">
+                <table class="table">
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                    <tbody id="add-row">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="card card-default">
+            <div class="card-header" id="header-font2">Add Train</div>
+            <div class="card-body" id="body2">
+                <form role="form">
+                    <div class="form-group row">
+                        <label for="name-input">Train Name:</label>
+                        <input class="form-control" id="name-input" type="text">
+                    </div>
+                    <div class="form-group row">
+                        <label for="destination-input">Destination:</label>
+                        <input class="form-control" id="destination-input" type="text">
+                    </div>
+                    <div class="form-group row">
+                        <label for="time-input">First Train Time (HH:mm - military time):</label>
+                        <input class="form-control" id="time-input" type="text">
+                    </div>
+                    <div class="form-group row">
+                        <label for="frequency-input">Frequency (min):</label>
+                        <input class="form-control" id="frequency-input" type="text">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Users/Anam/Desktop/AnamAM.github.io/train-scheduler/assets/javascript/app.js"></script>
+    
+</body>
+
+</html>

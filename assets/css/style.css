@@ -1,0 +1,39 @@
+.jumbotron {
+    background-color: purple;
+    color: lavender;
+}
+
+#header-font {
+    background-color: plum;
+    color: purple;
+    font-weight: bold;
+}
+
+#body {
+    background-color: lavenderblush;
+}
+
+#header-font2 {
+    background-color: plum;
+    color: purple;
+    font-weight: bold;
+}
+
+#body2 {
+    background-color: lavenderblush;
+}
+
+#submit-button {
+    background-color: purple;
+}
+
+#wholething {
+    background-color: lavender;
+}
+
+.card-default {
+    border-width: thick;
+    border-color: purple;
+}
+
+
