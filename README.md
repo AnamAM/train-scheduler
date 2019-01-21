@@ -1,1 +1,3 @@
 # train-scheduler
+
+In this project, a user is able to create a train schedyle which is incorporated with Firebase to hold arrival and departure information. By entering the first train time and the frequency in minutes, moment.js will retrieve and manipulate data. This application is perfect for knowing the exact time a train will arrive and how many minutes are remaining until it's time to board. Choo choo!
